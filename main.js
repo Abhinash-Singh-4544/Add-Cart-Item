@@ -5,14 +5,16 @@ const app = Vue.createApp({
             cart:0,
             product : 'Socks',
             inStock: false,
+            selectedVariant: 0,
             brand: 'Vue Mastery',
             image: './assets/images/socks_green.jpg',
             inventory: 6,
             details: ['50% cotton', '30% wool', '20% polyster'],
             variants: [
-                { id: 2234, color: 'green', image: './assets/images/socks_green.jpg' },
-                { id: 2235, color: 'blue', image: './assets/images/socks_blue.jpg' },
-            ]
+                { id: 2234, color: 'green', image: './assets/images/socks_green.jpg', quantity: 50 },
+                { id: 2235, color: 'blue', image: './assets/images/socks_blue.jpg', quantity: 0 },
+            ],
+            onSale: true
         }
     },
     methods: {
