@@ -3,7 +3,7 @@ const app = Vue.createApp({
     data(){//here we use es6 short handling
         return{
             cart:0,
-            premium:true
+            premium:false
         }
     },
     methods: {}
